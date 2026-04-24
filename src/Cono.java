@@ -18,10 +18,10 @@ public class Cono  {
      * Metodo para calcular el volumen del cono
      * @return
      */
-    public double calculoVolumen() {
+    public float calculoVolumen() {
         float radio = Float.parseFloat(JOptionPane.showInputDialog(null,
                 "Ingrese el radio del cono"));
-        double vol = (3.14) * (Math.pow(radio, 2)) * getAltura() / 3;
+        float vol = (float) ((3.14) * (Math.pow(radio, 2)) * getAltura() / 3);
         return vol;
     }
 
